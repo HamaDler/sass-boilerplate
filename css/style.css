@@ -1,0 +1,224 @@
+:root {
+  --color-primary: #136a8a;
+  --color-primary-light: #45a2c4;
+  --color-primary-dark: #267871;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 5rem rgba($color: #000000, $alpha: 0.3);
+  --line: 1px solid var(--color-grey-light-2); }
+
+::selection {
+  background-color: #F08F00;
+  color: white; }
+
+html {
+  scroll-behavior: smooth; }
+
+a:focus, a:hover {
+  color: #F08F00;
+  text-decoration: none; }
+
+/*
+ * Avatar Photo
+ */
+.avatar {
+  text-align: center; }
+  .avatar__photo {
+    position: relative; }
+    @media only screen and (max-width: 580px) {
+      .avatar__photo {
+        display: inline-block;
+        width: 400px; } }
+    @media only screen and (max-width: 420px) {
+      .avatar__photo {
+        display: inline-block;
+        width: 300px; } }
+    @media only screen and (max-width: 300px) {
+      .avatar__photo {
+        display: inline-block;
+        width: 200px; } }
+
+#design-text {
+  -webkit-animation: opacityOnAndOff 4s linear infinite;
+  -moz-animation: opacityOnAndOff 4s linear infinite;
+  animation: opacityOnAndOff 4s linear infinite; }
+
+#code-text {
+  -webkit-animation: opacityOffAndOn 4s linear infinite;
+  -moz-animation: opacityOffAndOn 4s linear infinite;
+  animation: opacityOffAndOn 4s linear infinite; }
+
+#mug {
+  z-index: 100; }
+
+#smoke {
+  position: absolute;
+  z-index: 3;
+  width: 1px;
+  height: 160px;
+  left: 6.5rem;
+  bottom: 11.5rem; }
+  @media only screen and (max-width: 75em) {
+    #smoke {
+      bottom: 10.2rem;
+      left: 5.4rem; } }
+  @media only screen and (max-width: 992px) {
+    #smoke {
+      bottom: 7.7rem;
+      left: 4rem; } }
+  @media only screen and (max-width: 769px) {
+    #smoke {
+      bottom: 8.7rem;
+      left: 4.5rem;
+      height: 100px; } }
+  @media only screen and (max-width: 580px) {
+    #smoke {
+      bottom: 7.2rem;
+      left: 3.5rem;
+      height: 80px; } }
+  @media only screen and (max-width: 420px) {
+    #smoke {
+      bottom: 6.2rem;
+      left: 3.3rem;
+      height: 60px; } }
+  @media only screen and (max-width: 300px) {
+    #smoke {
+      bottom: 4.7rem;
+      left: 2.5rem; } }
+
+/* smoke balls */
+#smoke span {
+  display: block;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  margin-left: -20px;
+  height: 0px;
+  width: 0px;
+  border: 35px solid #d67a01;
+  border-radius: 35px;
+  left: -14px;
+  opacity: 0;
+  transform: scale(0.2); }
+  @media only screen and (max-width: 420px) {
+    #smoke span {
+      border: 25px solid #d67a01; } }
+
+/* Smoke animation */
+@keyframes smokeL {
+  0% {
+    transform: scale(0.2) translate(0, 0); }
+  10% {
+    opacity: 1;
+    transform: scale(0.2) translate(0, -5px); }
+  100% {
+    opacity: 0;
+    transform: scale(1) translate(-20px, -130px); } }
+
+@keyframes smokeR {
+  0% {
+    transform: scale(0.2) translate(0, 0); }
+  10% {
+    opacity: 1;
+    transform: scale(0.2) translate(0, -5px); }
+  100% {
+    opacity: 0;
+    transform: scale(1) translate(20px, -130px); } }
+
+#smoke .s0 {
+  animation: smokeL 10s 0s infinite; }
+
+#smoke .s1 {
+  animation: smokeR 10s 1s infinite; }
+
+#smoke .s2 {
+  animation: smokeL 10s 2s infinite; }
+
+#smoke .s3 {
+  animation: smokeR 10s 3s infinite; }
+
+#smoke .s4 {
+  animation: smokeL 10s 4s infinite; }
+
+#smoke .s5 {
+  animation: smokeR 10s 5s infinite; }
+
+#smoke .s6 {
+  animation: smokeL 10s 6s infinite; }
+
+#smoke .s7 {
+  animation: smokeR 10s 7s infinite; }
+
+#smoke .s8 {
+  animation: smokeL 10s 8s infinite; }
+
+#smoke .s9 {
+  animation: smokeR 10s 9s infinite; }
+
+/* PROFILE SECTION */
+.profile {
+  text-align: center; }
+
+.profile-content {
+  padding: 2rem; }
+
+.about-text {
+  color: #797979;
+  font-weight: 40;
+  font-size: 1rem; }
+
+.socials {
+  margin-bottom: 2rem; }
+
+.btn.btn-fab .fa, .btn.btn-fab .material-icons, .btn.btn-just-icon .fa, .btn.btn-just-icon .material-icons {
+  background: orange !important; }
+
+/* CONTACT FORM */
+.card-header {
+  background: linear-gradient(40deg, #ff9100, #d67a01) !important;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(235, 152, 0, 0.6) !important; }
+
+.form-control, .is-focused .form-control {
+  background-image: linear-gradient(0deg, #ff9100 2px, rgba(176, 105, 39, 0) 0), linear-gradient(0deg, #d2d2d2 1px, rgba(209, 209, 209, 0) 0); }
+
+@keyframes opacityOnAndOff {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes opacityOffAndOn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/* Smoke animation */
+@keyframes smokeL {
+  0% {
+    transform: scale(0.2) translate(0, 0); }
+  10% {
+    opacity: 1;
+    transform: scale(0.2) translate(0, -5px); }
+  100% {
+    opacity: 0;
+    transform: scale(1) translate(-20px, -130px); } }
+
+@keyframes smokeR {
+  0% {
+    transform: scale(0.2) translate(0, 0); }
+  10% {
+    opacity: 1;
+    transform: scale(0.2) translate(0, -5px); }
+  100% {
+    opacity: 0;
+    transform: scale(1) translate(20px, -130px); } }
