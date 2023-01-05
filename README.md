@@ -1,5 +1,5 @@
-# sass-boilerplate
+## Boilerplate
 
 
-## Sass Boilerplate following the 7-1 architecture pattern.
+SASS Boilerplate implementing the 7-1 architecture pattern.
 
